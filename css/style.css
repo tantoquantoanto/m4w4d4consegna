@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/alexander-grey-NkQD-RHhbvY-unsplash.jpg);
+  background-size: cover;
+
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navLeft a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#logoImg {
+  max-height: 50px;
+  width: auto;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.cart-icon i {
+  color: #2980b9;
+  transition: all 0.3s ease;
+}
+
+.cart-icon i:hover {
+  color: #1abc9c; 
+  font-size: 1.6rem;
+}
+
+.header-image {
+  width: 100%;
+  background-image: url("../assets/zona-giorno-divano-design-Sparapano-1024x576.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.header-text h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.dropdown-menu {
+  background-color: rgb(149, 148, 168);
+
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item:hover {
+  background-color: #e0e7f1;
+  color: #2980b9;
+}
+
+.card {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  background-color: #e0e7f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-body:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardImg {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  height: 3.6em;
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3.6em;
+  font-size: 0.8em;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.card-body .btn-primary {
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-body .btn-primary:hover {
+  background-color: #16a085;
+  transform: scale(1.1);
+}
+
+.addCart {
+  background-color: #f48fb1;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.addCart:hover {
+  background-color: #f06292;
+  transform: scale(1.1);
+}
+
+
+footer {
+  background-color: rgb(149, 148, 168);
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .input-group input {
+  border-radius: 0;
+}
+
+footer .input-group button {
+  border-radius: 0;
+}
+
+footer .fab {
+  font-size: 1.5rem;
+}
+
+
+.offcanvas {
+  background-color:  rgb(149, 148, 168) ;
+}
