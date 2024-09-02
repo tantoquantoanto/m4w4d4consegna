@@ -27,7 +27,10 @@ const loadCartFromLocalStorage = () => {
 // Funzione per aggiornare il carrello
 const updateCart = () => {
   cartItemsContainer.innerHTML = ""; 
+  let total = 0;
+
   cart.forEach((item, index) => {
+    total += item.price;
     const itemElement = document.createElement("div");
     itemElement.classList.add("cart-item", "mb-3");
     itemElement.innerHTML = `
@@ -37,7 +40,10 @@ const updateCart = () => {
     cartItemsContainer.appendChild(itemElement);
   });
 
-  
+  const cartTotalElement = document.getElementById("cartTotal");
+  cartTotalElement.textContent = `Totale: € ${total.toFixed(2)}`;
+
+
   document.querySelectorAll(".btn-danger").forEach((button) => {
     button.addEventListener("click", (e) => {
       const index = e.target.getAttribute("data-index");

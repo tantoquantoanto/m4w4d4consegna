@@ -64,7 +64,7 @@ nav {
 }
 
 .header-text h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -208,3 +208,9 @@ footer .fab {
 .offcanvas {
   background-color:  rgb(149, 148, 168) ;
 }
+
+#cartTotal {
+  font-size: 1.5em;
+  font-weight: bold;
+  align-self: center;
+} 
