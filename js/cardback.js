@@ -1,10 +1,10 @@
 const cardBackContainer = document.getElementById("cardBackContainer");
-// funzione per rimuovere la col associata all'elemento
+/* funzione per rimuovere la col associata all'elemento*/
 const deleteProductCol = (colElement) => {
   
   colElement.remove();
 };
-// funzione GET
+/* funzione GET*/
 const call = async () => {
   const response = await fetch(
     "https://striveschool-api.herokuapp.com/api/product/",
@@ -33,7 +33,7 @@ const deleteProduct = async (id, colElement) => {
   );
 
   if (response.ok) {
-   // Rimuove la card se la delete è andata a buon fine
+   /* Rimuove la card se la delete è andata a buon fine*/
     deleteProductCol(colElement);
   } else {
     console.error("Failed to delete product");
@@ -55,7 +55,7 @@ const storageData = (productsArray) => {
     deleteButton.classList.add("deleteButton");
     deleteButton.textContent = "Elimina prodotto";
 
-    // Al click chiama la funzione delete, passando come parametro la col da rimuovere
+    /* Al click chiama la funzione delete, passando come parametro la col da rimuovere*/
     deleteButton.addEventListener("click", (e) => {
       e.preventDefault();
       deleteProduct(product._id, col);

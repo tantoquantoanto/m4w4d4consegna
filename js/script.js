@@ -10,7 +10,7 @@ const offCanvas = new bootstrap.Offcanvas(
 
 let cart = []; 
 
-// Funzione per salvare il carrello nel localStorage
+/* Funzione per salvare il carrello nel localStorage*/
 const saveCartToLocalStorage = () => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
@@ -24,7 +24,7 @@ const loadCartFromLocalStorage = () => {
   }
 };
 
-// Funzione per aggiornare il carrello
+/* Funzione per aggiornare il carrello*/
 const updateCart = () => {
   cartItemsContainer.innerHTML = ""; 
   let total = 0;
@@ -65,17 +65,17 @@ const updateCart = () => {
   saveCartToLocalStorage(); 
 };
 
-// Funzione per aggiornare il contatore in base ai prodotti nel carrello
+/* Funzione per aggiornare il contatore in base ai prodotti nel carrello*/
 const updateCartCount = () => {
   cartCount.textContent = cart.length; 
 };
 
-// funzione per mostrare offcanvas al click sull'icona
+/* funzione per mostrare offcanvas al click sull'icona*/
 cartIcon.addEventListener("click", () => {
   offCanvas.show();
 });
 
-// Funzione per popolare la pagina con dati dei prodotti
+/* Funzione per popolare la pagina con dati dei prodotti*/
 const useData = (productsArray) => {
   setTimeout(() => {
     productsArray.forEach((product) => {
@@ -107,7 +107,7 @@ const useData = (productsArray) => {
       addCart.classList.add("addCart", "btn", "mt-2");
       addCart.textContent = "Aggiungi al carrello";
 
-      // funzione per aggiungere prodotti al carrello
+      /* funzione per aggiungere prodotti al carrello*/
       addCart.addEventListener("click", () => {
         cart.push(product);
         updateCart(); 
