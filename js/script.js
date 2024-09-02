@@ -41,7 +41,7 @@ const updateCart = () => {
   });
 
   const cartTotalElement = document.getElementById("cartTotal");
-  cartTotalElement.textContent = `Totale: € ${total.toFixed(2)}`;
+  cartTotalElement.textContent = `Totale: € ${total}`;
 
 
   document.querySelectorAll(".btn-danger").forEach((button) => {
